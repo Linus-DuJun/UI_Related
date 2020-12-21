@@ -1,3 +1,5 @@
+include ':feature-motion-layout'
+include ':feature-paint-and-canvas'
 include ':base'
 include ':utils'
 include ':app'

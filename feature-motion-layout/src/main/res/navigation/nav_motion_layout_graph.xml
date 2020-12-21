@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_motion_layout_graph"
+    app:startDestination="@id/motionLayoutFragment">
+
+    <fragment
+        android:id="@+id/motionLayoutFragment"
+        android:name="org.linus.motionlayout.fragment.MotionLayoutFragment"
+        android:label="@string/motion_layout_label"
+        tools:layout="@layout/fragment_motion_layout" />
+</navigation>
