@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidUiRelatedThings</string>
+    <string name="paint_canvas_basic">Paint and Canvas Basic</string>
+    <string name="custom_view_basic">Custom View</string>
+    <string name="coordinator_layout_and_nest_scroll">CoordinatorLayout and NestedScroll</string>
+    <string name="anim_basic">Anim_basic</string>
+    <string name="motion_layout">Anim with MotionLayout</string>
+</resources>

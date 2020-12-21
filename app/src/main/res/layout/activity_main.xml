@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="org.linus.practise.viewmodel.MainActivityViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/general_padding_16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_paint_canvas_basic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/material_btn_height"
+            android:text="@string/paint_canvas_basic"
+            app:layout_constraintBottom_toTopOf="@+id/btn_custom_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_custom_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/material_btn_height"
+            android:text="@string/custom_view_basic"
+            app:layout_constraintBottom_toTopOf="@+id/btn_coordinator_layout_and_nested_scroll"
+            app:layout_constraintTop_toBottomOf="@+id/btn_paint_canvas_basic" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_coordinator_layout_and_nested_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/material_btn_height"
+            android:text="@string/coordinator_layout_and_nest_scroll"
+            app:layout_constraintBottom_toTopOf="@+id/btn_anim_basic"
+            app:layout_constraintTop_toBottomOf="@+id/btn_custom_view" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_anim_basic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/material_btn_height"
+            android:text="@string/anim_basic"
+            app:layout_constraintBottom_toTopOf="@+id/btn_motion_layout"
+            app:layout_constraintTop_toBottomOf="@+id/btn_coordinator_layout_and_nested_scroll" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_motion_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/material_btn_height"
+            android:text="@string/motion_layout"
+            android:onClick="@{() -> viewModel.onMotionLayoutClick()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_anim_basic" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
